@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #00c6ff, #0072ff, #5efc82);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    font-family: 'Poppins', sans-serif;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Card container design */
+.container {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 420px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.amount, .dropdown {
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 0;
+    color: #555;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+}
+
+/* Styling for select dropdowns */
+.select-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+select {
+    margin-left: 12px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+i.fa-arrow-right-arrow-left {
+    color: #0072ff;
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+.msg {
+    margin: 20px 0;
+    color: #0072ff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.02);
+}
+
+img {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+}
